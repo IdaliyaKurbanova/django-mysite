@@ -1,0 +1,36 @@
+{% extends 'shopapp/basemodel.html'%}
+
+{% block title %}
+    Shop Index
+{% endblock %}
+
+
+{% block body %}
+    <h1> SHOP </h1>
+    <div>
+    Today is {% now 'd.m.Y' %}
+    </div>
+
+    <div>
+    Currents products:
+    <ul>
+        {% for name, price, discount, finish_date in products %}
+            <li> {{ name|capfirst }} for ${{ price }} </li>
+            {% if discount > 0 %}
+              Product with discount! Discount ends in {{ finish_date|timeuntil }}
+            {% endif %}
+        {% empty %}
+            No products today
+        {% endfor %}
+    </ul>
+    </div>
+
+    <div>
+    <h4>
+        For you additional 3%-discount for product "{{ product_names|random|capfirst }}" only today
+    </h4>
+    </div>
+
+{% endblock %}
+
+
