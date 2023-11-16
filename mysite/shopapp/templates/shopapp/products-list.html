@@ -1,0 +1,40 @@
+
+{% extends "shopapp/basemodel.html" %}
+
+{% block title %}
+Products list
+{% endblock %}
+
+
+
+{% block body %}
+<h3> Products to order:
+</h3>
+    <div>
+        {% if products %}
+        <ul>
+            {% for product in products %}
+            <li>
+                <p> Product name: {{ product.name }} </p>
+                <p> Description: {% firstof product.description 'No description' %} </p>
+                <p> Price:
+                    {% if product.price == 0 %}
+                     No price set yet
+                    {% else %}
+                    {{product.price}} $
+                    {% endif %}
+                </p>
+                <p> Discount %: {% firstof product.discount 'no discount' %} </p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        No products yet
+        {% endif %}
+
+    </div>
+
+
+{% endblock %}
+
+
