@@ -1,4 +1,6 @@
 from django.db import models
+from django.contrib.auth.models import User
+
 
 
 class Product(models.Model):
@@ -8,4 +10,12 @@ class Product(models.Model):
     discount = models.PositiveSmallIntegerField(default=0, blank=True, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     archived = models.BooleanField(default=False)
+
+
+class Order(models.Model):
+    delivery_address = models.TextField(blank=True, null=False)
+    promocode = models.CharField(max_length=100)
+    created_at = models.DateTimeField(auto_now_add=True)
+    user = models.ForeignKey(User, on_delete=models.PROTECT)
+    products = models.ManyToManyField(Product, related_name='orders')
 
