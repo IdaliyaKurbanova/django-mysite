@@ -6,31 +6,15 @@
 
 
 {% block body %}
-    <h1> SHOP </h1>
+    <h2> COSMETICS STORE </h2>
     <div>
     Today is {% now 'd.m.Y' %}
     </div>
 
-    <div>
-    Currents products:
-    <ul>
-        {% for name, price, discount, finish_date in products %}
-            <li> {{ name|capfirst }} for ${{ price }} </li>
-            {% if discount > 0 %}
-              Product with discount! Discount ends in {{ finish_date|timeuntil }}
-            {% endif %}
-        {% empty %}
-            No products today
-        {% endfor %}
-    </ul>
-    </div>
-
-    <div>
-    <h4>
-        For you additional 3%-discount for product "{{ product_names|random|capfirst }}" only today
-    </h4>
-    </div>
-
+    <h4> Welcome to cosmetics store! </h4>
+    {%  for link in menu %}
+        <div> <a href={% url link.url_name %}> {{ link.title}} </a></div>
+    {% endfor %}
 {% endblock %}
 
 

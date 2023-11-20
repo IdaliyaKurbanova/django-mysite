@@ -1,0 +1,34 @@
+{% extends "shopapp/basemodel.html" %}
+
+{% block title %}
+Orders list
+{% endblock %}
+
+
+{% block body %}
+    <h3> Current orders list: </h3>
+    <div>
+    {% if orders %}
+        <ul>
+        {% for order in orders %}
+            <li>
+            <p> Order made by user "{{ order.user }}"</p>
+            <p>    Delivery_address: {{ order.delivery_address }} </p>
+            <p>    Products in order:
+                   <ul>
+                   {% for product in order.products.all  %}
+                       <li> {{ product.name }}, price - {% firstof product.price 'no price set yet'%} $ </li>
+                   {% empty %}
+                       No products added to order
+                   {% endfor %}
+                   </ul>
+                </p>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h4> No orders yet </h4>
+    {%  endif %}
+    </div>
+
+{% endblock %}
