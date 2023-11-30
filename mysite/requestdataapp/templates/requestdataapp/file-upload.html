@@ -1,0 +1,26 @@
+{% extends "requestdataapp/base.html" %}
+
+{% block title %}
+File-upload
+{% endblock %}
+
+{% block body %}
+    <h2> Upload file </h2>
+
+    <div>
+        <form method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>
+                <label for="myfile"> Select file to upload </label>
+                <input id="myfile" name="myfile" type="file">
+            </p>
+            {% if message_for_user %}
+                <p style="color: blueviolet"> {{ message_for_user }} </p>
+            {% elif saved_file_name %}
+                <p style="color: blueviolet"> File "{{ saved_file_name }}" was successfully saved </p>
+            {% endif %}
+            <button type="submit"> Upload </button>
+
+        </form>
+    </div>
+{% endblock %}
