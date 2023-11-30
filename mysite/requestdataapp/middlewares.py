@@ -12,7 +12,7 @@ class Throttling_Middleware:
         current_datetime = datetime.now()
         last_time_update = self.user_data.get(user_id)
         self.user_data[user_id] = current_datetime
-        if last_time_update and (current_datetime - last_time_update).seconds < 2:
+        if last_time_update and (current_datetime - last_time_update).microseconds < 10:
             print(f"User {user_id} makes too frequent requests")
             return HttpResponse('Too frequent requests, wait a little, please!')
         else:
