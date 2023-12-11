@@ -55,29 +55,32 @@ class ProductArchiveView(DeleteView):
         return reverse('shopapp:product_detail', kwargs={"pk": self.object.pk})
 
 
-
-def orders_list(request: HttpRequest):
-    context: Dict[str, Any] = {
-        "orders": Order.objects.select_related("user").prefetch_related("products").all()
-    }
-    return render(request, 'shopapp/orders-list.html', context=context)
+class OrderListView(ListView):
+    queryset = Order.objects.select_related("user").prefetch_related("products")
 
 
-def create_new_order(request: HttpRequest):
-    if request.method == "POST":
-        form = OrderForm(request.POST)
-        if form.is_valid():
-            order = Order.objects.create(delivery_address=form.cleaned_data["delivery_address"],
-                                 promocode=form.cleaned_data["promocode"],
-                                 user=form.cleaned_data["user"])
-            for product in form.cleaned_data["products"]:
-                order.products.add(product)
-            order.save()
-            url = reverse("shopapp:orders_list")
-            return redirect(url)
-    else:
-        form = OrderForm()
-    context = {"form": form, }
-    return render(request, 'shopapp/create-order.html', context=context)
+class OrderDetailView(DetailView):
+    queryset = Order.objects.select_related("user").prefetch_related("products")
+
+
+class OrderCreateView(CreateView):
+    model = Order
+    fields = "promocode", "user", "products", "delivery_address",
+    success_url = reverse_lazy('shopapp:order_list')
+
+
+class OrderUpdateView(UpdateView):
+    model = Order
+    template_name_suffix = "_update_form"
+    fields = "promocode", "user", "products", "delivery_address",
+
+    def get_success_url(self):
+        return reverse('shopapp:order_detail', kwargs={"pk": self.object.pk})
+
+
+class OrderDeleteView(DeleteView):
+    model = Order
+    success_url = reverse_lazy('shopapp:order_list')
+
 
 

@@ -8,11 +8,11 @@ Orders list
 {% block body %}
     <h3> Current orders list: </h3>
     <div>
-    {% if orders %}
+    {% if object_list %}
         <ul>
-        {% for order in orders %}
+        {% for order in object_list %}
             <li>
-            <p> Order made by user "{{ order.user }}"</p>
+            <p> <a href="{% url "shopapp:order_detail" pk=order.pk %}">Order #{{ order.pk }}</a>  made by user "{{ order.user }}"</p>
             <p>    Delivery_address: {{ order.delivery_address }} </p>
             <p>    Products in order:
                    <ul>

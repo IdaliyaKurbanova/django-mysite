@@ -17,7 +17,7 @@ class Product(models.Model):
 
 class Order(models.Model):
     delivery_address = models.TextField(blank=True, null=False)
-    promocode = models.CharField(max_length=100)
+    promocode = models.CharField(max_length=100, blank=True)
     created_at = models.DateTimeField(auto_now_add=True)
     user = models.ForeignKey(User, on_delete=models.PROTECT)
     products = models.ManyToManyField(Product, related_name='orders')
