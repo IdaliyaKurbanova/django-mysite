@@ -8,14 +8,14 @@ Products list
 
 
 {% block body %}
-<h3> Products to order:
-</h3>
+<h2> Products to order:
+</h2>
     <div>
         {% if products %}
         <ul>
             {% for product in products %}
             <li>
-                <p> Product name: {{ product.name }} </p>
+                <p> Product name: <a href="{% url "shopapp:product_detail" pk=product.pk %}">{{product.name}}</a></p>
                 <p> Description: {% firstof product.description 'No description' %} </p>
                 <p> Price:
                     {% if product.price == 0 %}
@@ -33,10 +33,10 @@ Products list
         {% endif %}
 
     </div>
+    <br>
     <div>
     <a href="{% url 'shopapp:create_new_product' %}"> Create a new product </a>
     </div>
-
 
 {% endblock %}
 

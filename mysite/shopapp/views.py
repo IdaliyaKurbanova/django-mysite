@@ -1,6 +1,10 @@
 from django.shortcuts import render, reverse, redirect
-from django.http import HttpRequest
+from django.http import HttpRequest, HttpResponseRedirect
 from typing import List, Dict, Any
+
+from django.urls import reverse_lazy
+from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
+
 from .models import Product, Order
 from .forms import ProductForm, OrderForm
 
@@ -13,25 +17,43 @@ def shop_index(request: HttpRequest):
     return render(request, 'shopapp/shopapp-index.html', context=context)
 
 
-def products_list(request: HttpRequest):
-    context: Dict[str, Any] = {
-    "products": Product.objects.all()
-    }
-    return render(request, 'shopapp/products-list.html', context=context)
+class ProductListView(ListView):
+    queryset = Product.objects.filter(archived=False)
+    context_object_name = 'products'
 
 
-def create_new_product(request: HttpRequest):
-    if request.method == "POST":
-        form = ProductForm(request.POST)
-        if form.is_valid():
-            form.save()
-            url = reverse("shopapp:products_list")
-            return redirect(url)
+class ProductDetailView(DetailView):
+    model = Product
 
-    else:
-        form = ProductForm()
-    context = {"form": form, }
-    return render(request, 'shopapp/create-product.html', context=context)
+
+class ProductCreateView(CreateView):
+    model = Product
+    fields = "name", "description", "price", "discount"
+    success_url = reverse_lazy('shopapp:products_list')
+
+
+class ProductUpdateView(UpdateView):
+    model = Product
+    fields = "name", "description", "price", "discount", "archived"
+    template_name_suffix = "_update_form"
+
+    def get_success_url(self):
+        return reverse('shopapp:product_detail', kwargs={"pk": self.object.pk})
+
+
+class ProductArchiveView(DeleteView):
+    model = Product
+    template_name_suffix = "_confirm_archive"
+
+    def form_valid(self, form):
+        success_url = self.get_success_url()
+        self.object.archived = True
+        self.object.save()
+        return HttpResponseRedirect(success_url)
+
+    def get_success_url(self):
+        return reverse('shopapp:product_detail', kwargs={"pk": self.object.pk})
+
 
 
 def orders_list(request: HttpRequest):
