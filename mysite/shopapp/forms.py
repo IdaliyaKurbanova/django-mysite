@@ -8,8 +8,14 @@ class ProductForm(forms.ModelForm):
         fields = "name", "description", "price", "discount",
 
 
-class OrderForm(forms.Form):
-    products = forms.ModelMultipleChoiceField(queryset=Product.objects.all())
-    promocode = forms.CharField(max_length=100, required=False)
-    user = forms.ModelChoiceField(queryset=User.objects.all(), empty_label=None)
-    delivery_address = forms.CharField(widget=forms.Textarea(attrs={"cols": 40, "rows": 4}))
+# class OrderForm(forms.Form):
+#     products = forms.ModelMultipleChoiceField(queryset=Product.objects.all())
+#     promocode = forms.CharField(max_length=100, required=False)
+#     user = forms.ModelChoiceField(queryset=User.objects.all(), empty_label=None)
+#     delivery_address = forms.CharField(widget=forms.Textarea(attrs={"cols": 40, "rows": 4}))
+
+
+class OrderForm(forms.ModelForm):
+    class Meta:
+        model = Order
+        fields = "delivery_address", "promocode", "user", "products"

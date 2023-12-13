@@ -1,0 +1,32 @@
+{% extends 'shopapp/basemodel.html' %}
+
+{% block title %}
+    Product: {{object.pk}}
+{% endblock %}
+
+{% block body %}
+    <h2>Product <em>#{{ object.pk}}</em></h2>
+    <table>
+    <tr>
+        <td>Name: </td>
+        <td style="color: saddlebrown">{{ object.name }}</td>
+    </tr>
+    <tr>
+    <tr>
+        <td>Description: </td>
+        <td style="color: saddlebrown">{{ object.description }}</td>
+    </tr>
+    <tr>
+        <td>Price: </td>
+        <td style="color: saddlebrown">{{ object.price }}</td>
+    </tr>
+    <tr>
+        <td>Archived: </td>
+        <td style="color: saddlebrown">{{ object.archived }}</td>
+    </tr>
+    </table>
+    <br>
+    <p><a href="{% url "shopapp:products_list" %}">Back to list of products</a></p>
+    <p><a href="{% url "shopapp:update_product" pk=object.pk %}">Update product</a></p>
+    <p><a href="{% url "shopapp:archive_product" pk=object.pk %}">Archive product</a></p>
+{% endblock %}

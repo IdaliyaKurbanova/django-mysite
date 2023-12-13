@@ -1,0 +1,24 @@
+{% extends 'shopapp/basemodel.html' %}
+
+{% block title %}
+    Order #{{ order.pk }}
+{% endblock %}
+
+{% block body %}
+    <h1>Details of order #{{ order.pk }}</h1>
+    <p>    Made by user:  {{ order.user }}</p>
+    <p>    Delivery_address: {{ order.delivery_address }} </p>
+            <p>    Products in order:
+                   <ul>
+                   {% for product in order.products.all  %}
+                       <li> {{ product.name }}, price - {% firstof product.price 'no price set yet'%} $ </li>
+                   {% empty %}
+                       No products added to order
+                   {% endfor %}
+                   </ul>
+                </p>
+    <br>
+    <p> <a href="{% url "shopapp:order_list" %}">Back to list of orders</a> </p>
+    <p> <a href="{% url "shopapp:order_update" pk=order.pk %}">Update order</a></p>
+    <p> <a href="{% url "shopapp:order_delete" pk=order.pk %}">Delete order</a></p>
+{% endblock %}
