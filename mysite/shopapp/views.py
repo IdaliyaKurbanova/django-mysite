@@ -1,3 +1,4 @@
+from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, reverse, redirect
 from django.http import HttpRequest, HttpResponseRedirect
 from typing import List, Dict, Any
@@ -12,12 +13,12 @@ from .forms import ProductForm, OrderForm
 def shop_index(request: HttpRequest):
     context: Dict[str, List[Dict[str]]] = {
     "menu": [{'title': "Products to order", 'url_name': 'shopapp:products_list'},
-            {'title': "Current orders list", 'url_name': 'shopapp:orders_list'},],
+            {'title': "Current orders list", 'url_name': 'shopapp:order_list'},],
                              }
     return render(request, 'shopapp/shopapp-index.html', context=context)
 
 
-class ProductListView(ListView):
+class ProductListView(LoginRequiredMixin, ListView):
     queryset = Product.objects.filter(archived=False)
     context_object_name = 'products'
 
@@ -26,24 +27,42 @@ class ProductDetailView(DetailView):
     model = Product
 
 
-class ProductCreateView(CreateView):
+class ProductCreateView(PermissionRequiredMixin, CreateView):
+    permission_required = 'shopapp.add_product'
     model = Product
     fields = "name", "description", "price", "discount"
     success_url = reverse_lazy('shopapp:products_list')
 
+    def form_valid(self, form):
+        form.instance.created_by = self.request.user
+        response = super().form_valid(form)
+        return response
 
-class ProductUpdateView(UpdateView):
+
+class ProductUpdateView(UserPassesTestMixin, UpdateView):
     model = Product
     fields = "name", "description", "price", "discount", "archived"
     template_name_suffix = "_update_form"
+
+    def test_func(self):
+        self.object = self.get_object()
+        return (self.request.user.is_superuser
+                or self.request.user.has_perm('shopapp.change_product')
+                or (self.object.created_by == self.request.user))
 
     def get_success_url(self):
         return reverse('shopapp:product_detail', kwargs={"pk": self.object.pk})
 
 
-class ProductArchiveView(DeleteView):
+class ProductArchiveView(UserPassesTestMixin, DeleteView):
     model = Product
     template_name_suffix = "_confirm_archive"
+
+    def test_func(self):
+        self.object = self.get_object()
+        return (self.request.user.is_superuser
+                or self.request.user.has_perm('shopapp.change_product')
+                or (self.object.created_by == self.request.user))
 
     def form_valid(self, form):
         success_url = self.get_success_url()

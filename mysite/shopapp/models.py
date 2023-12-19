@@ -10,6 +10,7 @@ class Product(models.Model):
     discount = models.PositiveSmallIntegerField(default=0, blank=True, null=False)
     created_at = models.DateTimeField(auto_now_add=True)
     archived = models.BooleanField(default=False)
+    created_by = models.ForeignKey(User, on_delete=models.PROTECT, default=1)
 
     def __str__(self) -> str:
         return f"Product {self.name!r}, pk={self.pk}"

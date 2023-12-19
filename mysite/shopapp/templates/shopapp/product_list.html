@@ -34,10 +34,11 @@ Products list
 
     </div>
     <br>
-    <div>
-    <a href="{% url 'shopapp:create_new_product' %}"> Create a new product </a>
-    </div>
-
+    {% if 'shopapp.add_product' in perms %}
+        <div>
+        <a href="{% url 'shopapp:create_new_product' %}"> Create a new product </a>
+        </div>
+    {%  endif %}
 {% endblock %}
 
 
