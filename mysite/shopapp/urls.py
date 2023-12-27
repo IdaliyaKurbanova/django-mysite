@@ -8,7 +8,9 @@ from .views import (shop_index,
                     ProductUpdateView,
                     ProductArchiveView,
                     OrderDetailView,
-                    OrderUpdateView, OrderDeleteView
+                    OrderUpdateView,
+                    OrderDeleteView,
+                    OrdersExportView
                     )
 
 app_name = 'shopapp'
@@ -25,4 +27,5 @@ urlpatterns = [
     path('orders/<int:pk>/update/', OrderUpdateView.as_view(), name='order_update'),
     path('orders/<int:pk>/delete/', OrderDeleteView.as_view(), name='order_delete'),
     path('orders/create/', OrderCreateView.as_view(), name='create_new_order'),
+    path('orders/export/', OrdersExportView.as_view(), name='orders_export'),
 ]

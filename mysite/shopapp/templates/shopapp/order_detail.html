@@ -7,6 +7,7 @@
 {% block body %}
     <h1>Details of order #{{ order.pk }}</h1>
     <p>    Made by user:  {{ order.user }}</p>
+    <p>    Promocode:  {{ order.promocode }}</p>
     <p>    Delivery_address: {{ order.delivery_address }} </p>
             <p>    Products in order:
                    <ul>

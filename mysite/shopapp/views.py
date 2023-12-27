@@ -1,9 +1,10 @@
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, reverse, redirect
-from django.http import HttpRequest, HttpResponseRedirect
+from django.http import HttpRequest, HttpResponseRedirect, JsonResponse
 from typing import List, Dict, Any
 
 from django.urls import reverse_lazy
+from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
 from .models import Product, Order
@@ -78,7 +79,8 @@ class OrderListView(ListView):
     queryset = Order.objects.select_related("user").prefetch_related("products")
 
 
-class OrderDetailView(DetailView):
+class OrderDetailView(PermissionRequiredMixin, DetailView):
+    permission_required = 'shopapp.view_order'
     queryset = Order.objects.select_related("user").prefetch_related("products")
 
 
@@ -100,6 +102,22 @@ class OrderUpdateView(UpdateView):
 class OrderDeleteView(DeleteView):
     model = Order
     success_url = reverse_lazy('shopapp:order_list')
+
+
+class OrdersExportView(UserPassesTestMixin, View):
+
+    def test_func(self):
+        test_result = self.get_test_func()
+        return self.request.user.is_staff
+
+    def get(self, request: HttpRequest) -> JsonResponse:
+        data = {'orders': [{'ID': order.pk,
+                          'Delivery_address': order.delivery_address,
+                          'Promocode': order.promocode,
+                          'User': order.user.pk,
+                          'Products': [product.pk for product in order.products.all()]}
+                          for order in Order.objects.all()]}
+        return JsonResponse(data)
 
 
 
