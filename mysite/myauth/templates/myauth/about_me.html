@@ -1,0 +1,26 @@
+{% extends 'myauth/base.html' %}
+
+{% block title %}
+    About me
+{% endblock %}
+{% block body %}
+    {% if request.user.username %}
+        <h2>Current user:</h2>
+        <p> <u>Avatar:</u></p>
+        {%  if request.user.profile.avatar  %}
+        <div> <img src="{{ request.user.profile.avatar.url }}" alt="{{ request.user.profile.avatar.name }}"></div>
+        {% else %}
+            <i>No avatar set yet</i>
+        {% endif %}
+        <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+            {{ form.as_p }}
+        <p> <u>Username:</u> {{ request.user.username }} </p>
+        <p> <u>Email:</u> {{ request.user.email }} </p>
+        <p> <u>Biography:</u> {{ request.user.profile.bio }} </p>
+        <button type="submit">Save changes</button>
+        </form>
+    {% else %}
+        <h2>Anonymous user</h2>
+    {% endif %}
+{% endblock %}

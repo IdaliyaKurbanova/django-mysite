@@ -1,0 +1,28 @@
+
+{% extends "myauth/base.html" %}
+
+{% block title %}
+Users list
+{% endblock %}
+
+
+{% block body %}
+<h2> Existing users on site: </h2>
+    <div>
+        {% if object_list %}
+        <ul>
+            {% for user in object_list %}
+            <li>
+                <p> Username: <a href="{% url "myauth:profile_detail" pk=user.profile.pk %}">{{user.username}}</a></p>
+                <p> Email: {% firstof user.email 'No email' %} </p>
+            </li>
+            {% endfor %}
+        </ul>
+        {% else %}
+        No users yet
+        {% endif %}
+    </div>
+
+{% endblock %}
+
+
