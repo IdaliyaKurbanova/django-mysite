@@ -5,8 +5,9 @@ from .models import Product, Order, User
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
-        fields = "name", "description", "price", "discount",
+        fields = "name", "description", "price", "discount", "archived"
 
+    images = forms.ImageField(widget=forms.ClearableFileInput(attrs={'allow_multiple_selected':True}), required=False)
 
 # class OrderForm(forms.Form):
 #     products = forms.ModelMultipleChoiceField(queryset=Product.objects.all())

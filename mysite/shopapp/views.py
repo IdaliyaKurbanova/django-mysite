@@ -7,7 +7,7 @@ from django.urls import reverse_lazy
 from django.views import View
 from django.views.generic import ListView, DetailView, CreateView, UpdateView, DeleteView
 
-from .models import Product, Order
+from .models import Product, Order, ProductImage
 from .forms import ProductForm, OrderForm
 
 
@@ -25,13 +25,13 @@ class ProductListView(LoginRequiredMixin, ListView):
 
 
 class ProductDetailView(DetailView):
-    model = Product
+    queryset = Product.objects.prefetch_related('images')
 
 
 class ProductCreateView(PermissionRequiredMixin, CreateView):
     permission_required = 'shopapp.add_product'
     model = Product
-    fields = "name", "description", "price", "discount"
+    fields = "name", "description", "price", "discount",
     success_url = reverse_lazy('shopapp:products_list')
 
     def form_valid(self, form):
@@ -42,7 +42,7 @@ class ProductCreateView(PermissionRequiredMixin, CreateView):
 
 class ProductUpdateView(UserPassesTestMixin, UpdateView):
     model = Product
-    fields = "name", "description", "price", "discount", "archived"
+    form_class = ProductForm
     template_name_suffix = "_update_form"
 
     def test_func(self):
@@ -51,8 +51,16 @@ class ProductUpdateView(UserPassesTestMixin, UpdateView):
                 or self.request.user.has_perm('shopapp.change_product')
                 or (self.object.created_by == self.request.user))
 
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        images = form.files.getlist('images')
+        for img in images:
+            ProductImage.objects.create(image=img, product=self.object)
+        return response
+
     def get_success_url(self):
         return reverse('shopapp:product_detail', kwargs={"pk": self.object.pk})
+
 
 
 class ProductArchiveView(UserPassesTestMixin, DeleteView):

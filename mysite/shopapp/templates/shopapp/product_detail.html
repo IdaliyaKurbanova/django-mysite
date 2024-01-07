@@ -1,32 +1,33 @@
 {% extends 'shopapp/basemodel.html' %}
+{% load i18n %}
 
 {% block title %}
-    Product: {{object.pk}}
+    {% translate 'Product' %}: {{object.pk}}
 {% endblock %}
 
 {% block body %}
-    <h2>Product <em>#{{ object.pk}}</em></h2>
-    <table>
-    <tr>
-        <td>Name: </td>
-        <td style="color: saddlebrown">{{ object.name }}</td>
-    </tr>
-    <tr>
-    <tr>
-        <td>Description: </td>
-        <td style="color: saddlebrown">{{ object.description }}</td>
-    </tr>
-    <tr>
-        <td>Price: </td>
-        <td style="color: saddlebrown">{{ object.price }}</td>
-    </tr>
-    <tr>
-        <td>Archived: </td>
-        <td style="color: saddlebrown">{{ object.archived }}</td>
-    </tr>
-    </table>
+    <h2> {% translate 'Product' %}<em>#{{ object.pk}}</em></h2>
+    {% blocktranslate with name=object.name description=object.description price=object.price archived=object.archived %}
+        <p>Name: <span style="color: saddlebrown">{{ name }}</span></p>
+        <p>Description: <span style="color: saddlebrown">{{ description }}</span></p>
+        <p>Price: <span style="color: saddlebrown">{{ price }}</span></p>
+        <p>Archived: <span style="color: saddlebrown">{{ archived }}</span></p>
+    {% endblocktranslate %}
+
+    <div>
+    {% blocktranslate count images_num=object.images.all|length %}
+        <p>For product {{ images_num }} image available:</p>
+        {% plural %}
+        <p>For product {{ images_num }} images available:</p>
+    {% endblocktranslate %}
+    {% for image in object.images.all %}
+        <div>
+        <img src="{{ image.image.url }}" alt="{{ ímage.image.name }}">
+        </div>
+    {% endfor %}
+    </div>
     <br>
-    <p><a href="{% url "shopapp:products_list" %}">Back to list of products</a></p>
-    <p><a href="{% url "shopapp:update_product" pk=object.pk %}">Update product</a></p>
-    <p><a href="{% url "shopapp:archive_product" pk=object.pk %}">Archive product</a></p>
+    <p><a href="{% url "shopapp:products_list" %}"> {% translate 'Back to list of products' %}</a></p>
+    <p><a href="{% url "shopapp:update_product" pk=object.pk %}">{% translate 'Update product' %}</a></p>
+    <p><a href="{% url "shopapp:archive_product" pk=object.pk %}">{% translate 'Archive product' %}</a></p>
 {% endblock %}
