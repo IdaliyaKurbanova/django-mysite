@@ -43,6 +43,7 @@ INSTALLED_APPS = [
     'myauth.apps.MyauthConfig',
     'rest_framework',
     'django_filters',
+    'drf_spectacular',
 ]
 
 MIDDLEWARE = [
@@ -147,5 +148,13 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
     'DEFAULT_FILTER_BACKENDS': [
-        'django_filters.rest_framework.DjangoFilterBackend',]
+        'django_filters.rest_framework.DjangoFilterBackend',],
+    'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
+}
+
+SPECTACULAR_SETTINGS = {
+    'TITLE': 'Api for Cosmetics Shop',
+    'DESCRIPTION': 'Represents API for Product and Order models in Shopapp',
+    'VERSION': '1.0.0',
+    'SERVE_INCLUDE_SCHEMA': False,
 }
