@@ -27,7 +27,6 @@ class RegistrationView(CreateView):
         password = form.cleaned_data.get('password2')
         user = authenticate(request=self.request, username=username, password=password)
         login(request=self.request, user=user)
-
         return response
 
 
