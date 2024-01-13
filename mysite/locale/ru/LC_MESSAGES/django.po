@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-06 20:22+0300\n"
+"POT-Creation-Date: 2024-01-14 00:50+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,13 +20,17 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\mysite\settings.py:125
+#: .\mysite\settings.py:130
 msgid "English"
 msgstr "Английский"
 
-#: .\mysite\settings.py:125
+#: .\mysite\settings.py:130
 msgid "Russian"
 msgstr "Русский"
+
+#: .\shopapp\admin.py:12
+msgid "Archive selected products"
+msgstr "Архивировать товары"
 
 #: .\shopapp\models.py:10 .\shopapp\templates\shopapp\product_detail.html:5
 #: .\shopapp\templates\shopapp\product_detail.html:9
@@ -37,13 +41,57 @@ msgstr "Товар"
 msgid "Products"
 msgstr "Товары"
 
-#: .\shopapp\models.py:27
+#: .\shopapp\models.py:13
+msgid "наименование"
+msgstr "наименование"
+
+#: .\shopapp\models.py:14
+msgid "описание"
+msgstr "описание"
+
+#: .\shopapp\models.py:15
+msgid "цена"
+msgstr "цена"
+
+#: .\shopapp\models.py:16
+msgid "скидка"
+msgstr "скидка"
+
+#: .\shopapp\models.py:17 .\shopapp\models.py:33
+msgid "дата создания"
+msgstr "дата создания"
+
+#: .\shopapp\models.py:18
+msgid "архивирован ли товар"
+msgstr "архивирован ли товар"
+
+#: .\shopapp\models.py:20
+msgid "пользователь, создавший товар"
+msgstr "пользователь, создавший товар"
+
+#: .\shopapp\models.py:28
 msgid "Order"
 msgstr "Заказ"
 
-#: .\shopapp\models.py:28
+#: .\shopapp\models.py:29
 msgid "Orders"
 msgstr "Заказы"
+
+#: .\shopapp\models.py:31
+msgid "адрес доставки"
+msgstr "адрес доставки"
+
+#: .\shopapp\models.py:32
+msgid "использованный промокод"
+msgstr "использованный промокод"
+
+#: .\shopapp\models.py:34
+msgid "пользователь, создавший заказ"
+msgstr "пользователь, создавший заказ"
+
+#: .\shopapp\models.py:35
+msgid "товары в заказе"
+msgstr "товары в заказе"
 
 #: .\shopapp\templates\shopapp\product_detail.html:10
 #, python-format
@@ -62,8 +110,8 @@ msgstr ""
 "        <p>Описание: <span style=\"color: saddlebrown\">%(description)s</"
 "span></p>\n"
 "        <p>Цена: <span style=\"color: saddlebrown\">%(price)s</span></p>\n"
-"        <p>Архивирован: <span style=\"color: saddlebrown\">%(archived)s</span></"
-"p>\n"
+"        <p>Архивирован: <span style=\"color: saddlebrown\">%(archived)s</"
+"span></p>\n"
 "    "
 
 #: .\shopapp\templates\shopapp\product_detail.html:18

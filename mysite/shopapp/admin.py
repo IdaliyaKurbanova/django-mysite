@@ -2,13 +2,14 @@ from django.contrib import admin
 from django.http import HttpRequest
 from django.db.models import QuerySet
 from .models import Product, Order
+from django.utils.translation import gettext_lazy as _
 
 
 class OrderInline(admin.TabularInline):
     model = Product.orders.through
 
 
-@admin.action(description="Archive selected products")
+@admin.action(description=_("Archive selected products"))
 def mark_as_archived(modeladmin: admin.ModelAdmin, request: HttpRequest, queryset: QuerySet):
     queryset.update(archived=True)
 
@@ -35,7 +36,7 @@ class ProductAdmin(admin.ModelAdmin):
 
 @admin.register(Order)
 class OrderAdmin(admin.ModelAdmin):
-    list_display = "pk", "delivery_address", "promocode", "created_at", "by_user"
+    list_display = "pk", "delivery_address", "promocode", "created_at", "user_by"
     list_display_links = "pk", "delivery_address"
     ordering = "pk",
     search_fields = "pk", "delivery_address", "by_user"
@@ -43,7 +44,7 @@ class OrderAdmin(admin.ModelAdmin):
     def get_queryset(self, request: HttpRequest):
         return Order.objects.select_related("user").prefetch_related("products")
 
-    def by_user(self, obj: Order) -> str:
+    def user_by(self, obj: Order) -> str:
         return obj.user.first_name or obj.user.username
 
 
