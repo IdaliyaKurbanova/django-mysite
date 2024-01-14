@@ -13,7 +13,7 @@
         {% for article in object_list %}
             <li>
             <p> Title: "{{ article.title }}"</p>
-            <p> Publication date: {{ article.pub_date}} </p>
+            <p> Publication date: {{ article.pub_date|date:"d.m.Y"}} </p>
             <p> Author: {{ article.author.name }} </p>
             <p> Category: {{ article.category.name }} </p>
             <p>    Tags of article:
@@ -31,6 +31,11 @@
     {% else %}
         <h4> No articles yet </h4>
     {%  endif %}
+
+    <p>
+    <a href="{% url 'blogapp:article_create' %}"> Create a new article </a>
+    </p>
+
     </div>
 
 {% endblock %}
