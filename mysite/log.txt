@@ -1,0 +1,142 @@
+INFO level - 2024-01-15 15:14:47,280 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:14:57,973 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:14:58,474 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:15:05,598 shopapp.views: "Logging for info-level is set"
+INFO level - 2024-01-15 15:16:23,689 shopapp.views: "Logging for info-level is set"
+INFO level - 2024-01-15 15:25:42,697 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:25:43,231 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:25:53,872 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:25:54,332 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:26:05,836 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:26:06,337 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:26:24,286 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:26:24,787 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:26:38,611 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:26:39,065 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:26:45,603 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:26:46,169 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:26:50,663 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:26:51,101 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:27:01,788 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:27:02,285 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:27:10,878 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:27:11,384 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:27:16,898 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:27:17,405 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:28:07,109 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:28:07,572 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:28:11,011 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:29:13,722 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:29:47,362 shopapp.views: "Logging for info-level is set"
+ERROR level - 2024-01-15 15:29:47,762 django.request: "Internal Server Error: /ru/shop/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\urls\base.py", line 71, in reverse
+    extra, resolver = resolver.namespace_dict[ns]
+                      ~~~~~~~~~~~~~~~~~~~~~~~^^^^
+KeyError: 'djdt'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\debug_toolbar\middleware.py", line 74, in __call__
+    rendered = toolbar.render_toolbar()
+               ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\debug_toolbar\toolbar.py", line 82, in render_toolbar
+    return render_to_string("debug_toolbar/base.html", context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\loader.py", line 62, in render_to_string
+    return template.render(context, request)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\backends\django.py", line 61, in render
+    return self.template.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 175, in render
+    return self._render(context)
+           ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\test\utils.py", line 112, in instrumented_test_render
+    return self.nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 321, in render
+    return nodelist.render(context)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 1005, in render
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 1005, in <listcomp>
+    return SafeString("".join([node.render_annotated(context) for node in self]))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\base.py", line 966, in render_annotated
+    return self.render(context)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\template\defaulttags.py", line 471, in render
+    url = reverse(view_name, args=args, kwargs=kwargs, current_app=current_app)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\urls\base.py", line 82, in reverse
+    raise NoReverseMatch("%s is not a registered namespace" % key)
+django.urls.exceptions.NoReverseMatch: 'djdt' is not a registered namespace
+INFO level - 2024-01-15 15:30:34,314 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\settings.py changed, reloading."
+INFO level - 2024-01-15 15:30:34,844 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:31:30,248 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\urls.py changed, reloading."
+INFO level - 2024-01-15 15:31:30,718 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:31:50,709 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\urls.py changed, reloading."
+INFO level - 2024-01-15 15:31:51,274 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:31:56,769 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\urls.py changed, reloading."
+INFO level - 2024-01-15 15:31:57,258 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:32:09,874 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\urls.py changed, reloading."
+INFO level - 2024-01-15 15:32:10,349 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:32:19,826 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\mysite\urls.py changed, reloading."
+INFO level - 2024-01-15 15:32:20,286 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:32:59,840 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 15:33:03,206 shopapp.views: "Logging for info-level is set"
+INFO level - 2024-01-15 23:12:16,551 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-15 23:12:19,590 django.request: "Not Found: /"
+INFO level - 2024-01-15 23:13:10,480 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-15 23:13:11,212 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 23:13:17,062 shopapp.views: "Logging for info-level is set"
+ERROR level - 2024-01-15 23:13:17,121 django.request: "Internal Server Error: /ru/shop/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 47, in shop_index
+    print(1/0)
+          ~^~
+ZeroDivisionError: division by zero
+INFO level - 2024-01-15 23:13:33,672 shopapp.views: "Logging for info-level is set"
+ERROR level - 2024-01-15 23:13:33,745 django.request: "Internal Server Error: /ru/shop/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 47, in shop_index
+    print(1/0)
+          ~^~
+ZeroDivisionError: division by zero
+INFO level - 2024-01-15 23:14:42,913 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-15 23:14:43,589 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-15 23:15:05,925 shopapp.views: "Logging for info-level is set"
+INFO level - 2024-01-15 23:19:57,021 shopapp.views: "Logging for info-level is set"

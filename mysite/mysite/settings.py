@@ -13,9 +13,17 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 from pathlib import Path
 from django.utils.translation import gettext_lazy as _
 
+import sentry_sdk
+
+sentry_sdk.init(
+    dsn="https://c81faae38d4e022df7cbd6633a313090@o4506577006559233.ingest.sentry.io/4506577028055040",
+    traces_sample_rate=1.0,
+    profiles_sample_rate=1.0,
+)
+
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
-
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.2/howto/deployment/checklist/
@@ -26,8 +34,23 @@ SECRET_KEY = 'django-insecure-$=y2mqy9#wl#4#n&abc_*55#qvinfyjcr+g^vt+lli82w7_9mk
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    "0.0.0.0",
+    "127.0.0.1"
+]
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
 
+LANGUAGES = [('en', _('English')), ('ru', _('Russian'))]
+
+if DEBUG:
+    import socket
+    hostname, _, ips = socket.gethostbyname_ex(socket.gethostname())
+    INTERNAL_IPS.append("10.0.2.2")
+    INTERNAL_IPS.extend(
+        [ip[: ip.rfind(".")] + ".1" for ip in ips]
+    )
 
 # Application definition
 
@@ -38,13 +61,17 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+
     'shopapp.apps.ShopappConfig',
     'requestdataapp.apps.RequestdataappConfig',
     'myauth.apps.MyauthConfig',
+    'blogapp.apps.BlogappConfig',
+
     'rest_framework',
     'django_filters',
     'drf_spectacular',
-    'blogapp.apps.BlogappConfig',
+    'debug_toolbar',
+
 ]
 
 MIDDLEWARE = [
@@ -57,6 +84,7 @@ MIDDLEWARE = [
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
     'requestdataapp.middlewares.Throttling_Middleware',
     'django.middleware.locale.LocaleMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 
 ]
 
@@ -80,7 +108,6 @@ TEMPLATES = [
 
 WSGI_APPLICATION = 'mysite.wsgi.application'
 
-
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
@@ -90,7 +117,6 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
-
 
 # Password validation
 # https://docs.djangoproject.com/en/4.2/ref/settings/#auth-password-validators
@@ -110,7 +136,6 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
-
 # Internationalization
 # https://docs.djangoproject.com/en/4.2/topics/i18n/
 
@@ -127,7 +152,7 @@ USE_L10N = True
 LOCALE_PATHS = [
     BASE_DIR / 'locale/',
 ]
-LANGUAGES = [('en', _('English')), ('ru', _('Russian'))]
+
 
 
 # Static files (CSS, JavaScript, Images)
@@ -149,7 +174,7 @@ REST_FRAMEWORK = {
     'DEFAULT_PAGINATION_CLASS': 'rest_framework.pagination.PageNumberPagination',
     'PAGE_SIZE': 10,
     'DEFAULT_FILTER_BACKENDS': [
-        'django_filters.rest_framework.DjangoFilterBackend',],
+        'django_filters.rest_framework.DjangoFilterBackend', ],
     'DEFAULT_SCHEMA_CLASS': 'drf_spectacular.openapi.AutoSchema'
 }
 
@@ -158,4 +183,38 @@ SPECTACULAR_SETTINGS = {
     'DESCRIPTION': 'Represents API for Product and Order models in Shopapp',
     'VERSION': '1.0.0',
     'SERVE_INCLUDE_SCHEMA': False,
+}
+
+LOGFILE_NAME = BASE_DIR / 'log.txt'
+LOGFILE_SIZE = 2 * 1024 * 1024
+LOGFILE_COUNT = 1
+
+LOGGING = {
+    'version': 1,
+    'disable_existing_loggers': False,
+    'formatters': {
+        'verbose': {
+            'format': '%(levelname)s level - %(asctime)s %(name)s: "%(message)s"'
+        },
+    },
+    'handlers': {
+        'console': {
+            'class': 'logging.StreamHandler',
+            'formatter': 'verbose',
+        },
+        'logfile': {
+            'class': 'logging.handlers.RotatingFileHandler',
+            'filename': LOGFILE_NAME,
+            'maxBytes': LOGFILE_SIZE,
+            'backupCount': LOGFILE_COUNT,
+            'formatter': 'verbose',
+        },
+    },
+    'root': {
+        'handlers': [
+            'console',
+            'logfile'
+        ],
+        'level': "INFO",
+    }
 }

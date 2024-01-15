@@ -21,7 +21,6 @@ from django.conf.urls.i18n import i18n_patterns
 from django.urls import path, include
 from drf_spectacular.views import SpectacularAPIView, SpectacularSwaggerView
 
-
 urlpatterns = [
     path('req/', include('requestdataapp.urls')),
     path('accounts/', include('myauth.urls')),
@@ -38,3 +37,6 @@ urlpatterns += i18n_patterns(
 if settings.DEBUG:
     urlpatterns.extend(
         static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT))
+    urlpatterns.append(
+        path('__debug__/', include('debug_toolbar.urls')),
+    )

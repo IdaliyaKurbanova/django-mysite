@@ -1,3 +1,4 @@
+import logging
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
 from django.shortcuts import render, reverse, redirect
 from django.http import HttpRequest, HttpResponseRedirect, JsonResponse
@@ -11,6 +12,8 @@ from .forms import ProductForm, OrderForm
 from rest_framework.viewsets import ModelViewSet
 from .serializers import ProductSerializer, OrderSerializer
 from django_filters.rest_framework import DjangoFilterBackend
+
+log = logging.getLogger(__name__)
 
 
 class ProductViewSet(ModelViewSet):
@@ -40,6 +43,7 @@ def shop_index(request: HttpRequest):
     "menu": [{'title': "Products to order", 'url_name': 'shopapp:products_list'},
             {'title': "Current orders list", 'url_name': 'shopapp:order_list'},],
                              }
+    log.info('Logging for info-level is set')
     return render(request, 'shopapp/shopapp-index.html', context=context)
 
 
