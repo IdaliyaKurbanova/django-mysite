@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-01-14 00:50+0300\n"
+"POT-Creation-Date: 2024-01-18 16:31+0300\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -20,11 +20,11 @@ msgstr ""
 "%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
 "%100>=11 && n%100<=14)? 2 : 3);\n"
 
-#: .\mysite\settings.py:130
+#: .\mysite\settings.py:45
 msgid "English"
 msgstr "Английский"
 
-#: .\mysite\settings.py:130
+#: .\mysite\settings.py:45
 msgid "Russian"
 msgstr "Русский"
 
@@ -32,64 +32,68 @@ msgstr "Русский"
 msgid "Archive selected products"
 msgstr "Архивировать товары"
 
-#: .\shopapp\models.py:10 .\shopapp\templates\shopapp\product_detail.html:5
+#: .\shopapp\models.py:11 .\shopapp\templates\shopapp\product_detail.html:5
 #: .\shopapp\templates\shopapp\product_detail.html:9
 msgid "Product"
 msgstr "Товар"
 
-#: .\shopapp\models.py:11
+#: .\shopapp\models.py:12
 msgid "Products"
 msgstr "Товары"
 
-#: .\shopapp\models.py:13
+#: .\shopapp\models.py:14
 msgid "наименование"
 msgstr "наименование"
 
-#: .\shopapp\models.py:14
+#: .\shopapp\models.py:15
 msgid "описание"
 msgstr "описание"
 
-#: .\shopapp\models.py:15
+#: .\shopapp\models.py:16
 msgid "цена"
 msgstr "цена"
 
-#: .\shopapp\models.py:16
+#: .\shopapp\models.py:17
 msgid "скидка"
 msgstr "скидка"
 
-#: .\shopapp\models.py:17 .\shopapp\models.py:33
+#: .\shopapp\models.py:18 .\shopapp\models.py:39
 msgid "дата создания"
 msgstr "дата создания"
 
-#: .\shopapp\models.py:18
+#: .\shopapp\models.py:19
 msgid "архивирован ли товар"
 msgstr "архивирован ли товар"
 
-#: .\shopapp\models.py:20
+#: .\shopapp\models.py:21
 msgid "пользователь, создавший товар"
 msgstr "пользователь, создавший товар"
 
-#: .\shopapp\models.py:28
+#: .\shopapp\models.py:23
+msgid "дата обновления информации о товаре"
+msgstr "дата обновления информации о товаре"
+
+#: .\shopapp\models.py:34
 msgid "Order"
 msgstr "Заказ"
 
-#: .\shopapp\models.py:29
+#: .\shopapp\models.py:35
 msgid "Orders"
 msgstr "Заказы"
 
-#: .\shopapp\models.py:31
+#: .\shopapp\models.py:37
 msgid "адрес доставки"
 msgstr "адрес доставки"
 
-#: .\shopapp\models.py:32
+#: .\shopapp\models.py:38
 msgid "использованный промокод"
 msgstr "использованный промокод"
 
-#: .\shopapp\models.py:34
+#: .\shopapp\models.py:40
 msgid "пользователь, создавший заказ"
 msgstr "пользователь, создавший заказ"
 
-#: .\shopapp\models.py:35
+#: .\shopapp\models.py:41
 msgid "товары в заказе"
 msgstr "товары в заказе"
 

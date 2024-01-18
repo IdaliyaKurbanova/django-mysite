@@ -1,5 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
+from django.urls import reverse
 from django.utils.translation import gettext_lazy as _
 
 def get_image_path(instance: 'ProductImage', filename):
@@ -18,9 +19,14 @@ class Product(models.Model):
     archived = models.BooleanField(default=False, verbose_name=_('архивирован ли товар'))
     created_by = models.ForeignKey(User, on_delete=models.PROTECT, default=1,
                                    verbose_name=_('пользователь, создавший товар'))
+    updated_at = models.DateField(auto_now=True, blank=True, null=True,
+                                  verbose_name=_('дата обновления информации о товаре'))
 
     def __str__(self) -> str:
         return f"Product {self.name!r}, pk={self.pk}"
+
+    def get_absolute_url(self):
+        return reverse('shopapp:product_detail', kwargs={'pk': self.pk})
 
 
 class Order(models.Model):
