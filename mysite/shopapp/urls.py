@@ -10,7 +10,8 @@ from .views import (shop_index,
                     OrderDetailView,
                     OrderUpdateView,
                     OrderDeleteView,
-                    OrdersExportView
+                    OrdersExportView,
+                    LatestProductsFeed
                     )
 from rest_framework.routers import DefaultRouter
 from .views import ProductViewSet, OrderViewSet
@@ -26,6 +27,7 @@ urlpatterns = [
     path('', shop_index, name='index'),
     path('api/', include(routers.urls)),
     path('products/', ProductListView.as_view(), name='products_list'),
+    path('products/latest/feed', LatestProductsFeed(), name='latest_products_feed'),
     path('products/create/', ProductCreateView.as_view(), name='create_new_product'),
     path('products/<int:pk>/', ProductDetailView.as_view(), name='product_detail'),
     path('products/<int:pk>/update/', ProductUpdateView.as_view(), name='update_product'),

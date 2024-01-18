@@ -359,3 +359,66 @@ Traceback (most recent call last):
 django.db.utils.OperationalError: no such column: shopapp_product.updated_at
 INFO level - 2024-01-18 16:46:08,374 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\sitemap.py changed, reloading."
 INFO level - 2024-01-18 16:46:09,103 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:54:55,560 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:54:56,540 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:55:01,052 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:55:01,740 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:55:05,067 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:55:05,841 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:55:10,324 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:55:11,018 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:55:14,551 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:55:15,169 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:58:00,223 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:58:01,004 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 16:59:56,274 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 16:59:57,081 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 17:00:41,034 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-18 17:00:41,753 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 17:01:33,623 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-18 17:01:34,398 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-18 17:02:00,079 django.request: "Not Found: /ru/shop/products/latest/feed"
+INFO level - 2024-01-18 17:02:20,474 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-18 17:02:21,437 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-18 17:02:21,962 django.request: "Internal Server Error: /ru/shop/products/latest/feed"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: LatestProductsFeed() takes no arguments
+INFO level - 2024-01-18 17:02:46,801 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-18 17:02:47,649 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-18 17:02:48,283 django.request: "Internal Server Error: /ru/shop/products/latest/feed"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\syndication\views.py", line 40, in __call__
+    feedgen = self.get_feed(obj, request)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\syndication\views.py", line 143, in get_feed
+    link = add_domain(current_site.domain, link, request.is_secure())
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\syndication\views.py", line 17, in add_domain
+    if url.startswith("//"):
+       ^^^^^^^^^^^^^^
+AttributeError: 'NoneType' object has no attribute 'startswith'
+INFO level - 2024-01-18 17:04:02,899 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 17:04:03,842 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 17:04:31,169 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-18 17:04:32,056 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-18 17:06:40,167 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-18 17:06:42,186 django.request: "Not Found: /"
+INFO level - 2024-01-18 17:06:48,097 shopapp.views: "Logging for info-level is set"

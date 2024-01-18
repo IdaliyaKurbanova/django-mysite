@@ -1,5 +1,6 @@
 import logging
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.syndication.views import Feed
 from django.shortcuts import render, reverse, redirect
 from django.http import HttpRequest, HttpResponseRedirect, JsonResponse
 from typing import List, Dict, Any
@@ -14,6 +15,22 @@ from .serializers import ProductSerializer, OrderSerializer
 from django_filters.rest_framework import DjangoFilterBackend
 
 log = logging.getLogger(__name__)
+
+
+class LatestProductsFeed(Feed):
+    title = 'Latest products of cosmetic shop in sale'
+    description = 'Presents latest products, which are in sale at the moment'
+    link = reverse_lazy('shopapp:products_list')
+
+    def items(self):
+        return Product.objects.filter(archived=False)
+
+    def item_title(self, item):
+        return item.name
+
+    def item_description(self, item):
+        return item.description
+
 
 
 class ProductViewSet(ModelViewSet):
