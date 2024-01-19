@@ -2,6 +2,10 @@ from django import forms
 from .models import Product, Order, User
 
 
+class CSVFileForm(forms.Form):
+    csv_file = forms.FileField()
+
+
 class ProductForm(forms.ModelForm):
     class Meta:
         model = Product
