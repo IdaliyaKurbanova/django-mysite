@@ -1,0 +1,38 @@
+{% extends "shopapp/basemodel.html" %}
+
+{% block title %}
+Orders list
+{% endblock %}
+
+
+{% block body %}
+    <div>
+    {% if object_list %}
+        <h3> User {{ owner }} made next orders: </h3>
+        <ul>
+        {% for order in object_list %}
+            <li>
+            <p> <a href="{% url "shopapp:order_detail" pk=order.pk %}">Order #{{ order.pk }}</a></p>
+            <p>    Delivery_address: {{ order.delivery_address }} </p>
+            <p>    Products in order:
+                   <ul>
+                   {% for product in order.products.all  %}
+                       <li> {{ product.name }}, price - {% firstof product.price 'no price set yet'%} $ </li>
+                   {% empty %}
+                       No products added to order
+                   {% endfor %}
+                   </ul>
+                </p>
+            </li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <h3> There is no orders for user {{ owner }} yet</h3>
+    {%  endif %}
+    </div>
+
+    <p>
+    <a href="{% url "shopapp:create_new_order" %}"> To create a new order</a>
+    </p>
+
+{% endblock %}

@@ -1,8 +1,9 @@
 import logging
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
+from django.contrib.auth.models import User
 from django.contrib.syndication.views import Feed
 from django.shortcuts import render, reverse, redirect
-from django.http import HttpRequest, HttpResponseRedirect, JsonResponse
+from django.http import HttpRequest, HttpResponseRedirect, JsonResponse, HttpResponseNotFound, Http404
 from typing import List, Dict, Any
 from django.urls import reverse_lazy
 from django.views import View
@@ -171,6 +172,27 @@ class OrdersExportView(UserPassesTestMixin, View):
                           'Products': [product.pk for product in order.products.all()]}
                           for order in Order.objects.all()]}
         return JsonResponse(data)
+
+
+class UserOrderListView(LoginRequiredMixin, ListView):
+    model = Order
+    template_name = 'shopapp/user_orders_list.html'
+
+    def get_queryset(self):
+        try:
+            self.owner = User.objects.get(pk=self.kwargs['user_id'])
+        except Exception:
+            raise Http404
+        queryset = Order.objects.filter(user=self.owner).prefetch_related("products")
+        return queryset
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+        context['owner'] = self.owner
+        return context
+
+
+
 
 
 

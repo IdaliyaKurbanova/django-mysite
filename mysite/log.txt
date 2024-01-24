@@ -769,3 +769,1101 @@ Traceback (most recent call last):
     raise NoReverseMatch(msg)
 django.urls.exceptions.NoReverseMatch: Reverse for 'imprt_csv' not found. 'imprt_csv' is not a valid view function or pattern name.
 INFO level - 2024-01-19 22:43:12,538 shopapp.views: "Logging for info-level is set"
+INFO level - 2024-01-25 00:31:38,059 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:31:39,255 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:31:41,745 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:31:42,414 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:31:44,836 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:31:45,548 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:31:47,863 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:31:48,536 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:31:55,082 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:31:55,721 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:32:17,762 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:32:18,531 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:34:03,845 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:34:04,607 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:34:30,866 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:34:31,575 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:34:39,210 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:34:39,975 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:35:40,316 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:35:40,986 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:36:08,399 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-25 00:36:09,139 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:37:20,914 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-25 00:37:21,634 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:37:30,414 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-25 00:37:31,068 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:39:01,679 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:39:02,419 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 00:39:37,787 django.request: "Not Found: /"
+ERROR level - 2024-01-25 00:40:02,658 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 135, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OrdersExportView.get() got an unexpected keyword argument 'user_id'
+INFO level - 2024-01-25 00:41:09,582 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:41:10,415 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 00:41:10,948 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 135, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OrdersExportView.get() got an unexpected keyword argument 'user_id'
+ERROR level - 2024-01-25 00:41:46,139 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 135, in dispatch
+    return super().dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: OrdersExportView.get() got an unexpected keyword argument 'user_id'
+INFO level - 2024-01-25 00:42:44,308 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-25 00:42:45,170 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:43:07,444 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:43:08,340 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:43:54,363 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:43:55,195 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:47:00,001 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:47:00,756 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:47:10,543 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:47:11,167 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:47:59,014 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:47:59,731 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:48:17,673 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:48:18,328 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:48:52,931 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:48:53,616 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:49:32,408 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:49:33,223 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:50:53,332 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:50:53,998 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:53:20,156 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:53:20,929 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:54:20,390 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:54:21,201 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:54:49,425 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:54:50,141 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 00:54:54,091 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+INFO level - 2024-01-25 00:55:33,243 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:55:34,093 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 00:55:34,775 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+ERROR level - 2024-01-25 00:55:34,975 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+ERROR level - 2024-01-25 00:55:35,173 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+INFO level - 2024-01-25 00:56:39,969 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:56:40,821 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 00:56:41,367 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+ERROR level - 2024-01-25 00:56:41,581 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+ERROR level - 2024-01-25 00:56:42,082 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+ERROR level - 2024-01-25 00:56:42,283 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 97, in view
+    self = cls(**initkwargs)
+           ^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 183, in __init__
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                                     ^^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'kwargs'
+INFO level - 2024-01-25 00:57:52,802 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:57:53,663 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 00:57:54,213 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    queryset = Order.objects.filter(user=self.owner).select_related("user").prefetch_related("products")
+                                         ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+ERROR level - 2024-01-25 00:57:54,959 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    queryset = Order.objects.filter(user=self.owner).select_related("user").prefetch_related("products")
+                                         ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+ERROR level - 2024-01-25 00:57:55,131 django.request: "Internal Server Error: /ru/shop/users/1/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    queryset = Order.objects.filter(user=self.owner).select_related("user").prefetch_related("products")
+                                         ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+INFO level - 2024-01-25 00:58:05,630 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:58:06,490 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 00:58:51,551 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 00:58:52,349 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 01:11:58,369 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:11:59,264 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:13:30,461 django.request: "Forbidden (Permission denied): /ru/shop/orders/1/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 108, in dispatch
+    return self.handle_no_permission()
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\contrib\auth\mixins.py", line 48, in handle_no_permission
+    raise PermissionDenied(self.get_permission_denied_message())
+django.core.exceptions.PermissionDenied
+INFO level - 2024-01-25 01:18:36,679 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:18:37,712 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:18:45,264 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 174, in get
+    context = self.get_context_data()
+              ^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 191, in get_context_data
+    context['owner'] = self.owner
+                       ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+INFO level - 2024-01-25 01:19:21,343 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:19:22,185 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:19:22,947 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:19:23,240 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:19:23,406 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:25:02,474 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:25:03,349 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:25:09,725 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:27:25,216 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:27:25,984 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:27:27,971 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:27:28,636 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:28:28,812 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:28:29,608 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:28:30,240 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:28:30,776 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:31:52,944 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:31:54,848 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 01:33:25,433 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:33:26,684 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:33:27,549 django.request: "Internal Server Error: /ru/shop/users/5/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 194, in get
+    if not self.owner:
+           ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+INFO level - 2024-01-25 01:33:51,785 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:33:53,081 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:33:53,857 django.request: "Internal Server Error: /ru/shop/users/5/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    if not self.owner:
+           ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+ERROR level - 2024-01-25 01:33:56,820 django.request: "Internal Server Error: /ru/shop/users/5/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    if not self.owner:
+           ^^^^^^^^^^
+AttributeError: 'UserOrderListView' object has no attribute 'owner'
+INFO level - 2024-01-25 01:34:12,746 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:34:13,987 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 01:35:17,133 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:35:18,304 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:35:19,056 django.request: "Not Found: /ru/shop/users/5/orders/"
+INFO level - 2024-01-25 01:35:47,228 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:35:48,343 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:35:53,982 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:36:32,043 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:36:33,406 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:36:34,222 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:36:50,466 django.request: "Internal Server Error: /ru/shop/users/12/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:36:55,033 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:38:15,568 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:38:16,763 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 01:39:07,013 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:39:08,544 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:39:09,229 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 186, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:39:09,761 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 186, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:39:58,336 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:39:59,474 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:40:00,227 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:40:25,207 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:40:26,305 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:40:27,033 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:40:30,077 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:40:31,267 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:40:32,041 django.request: "Internal Server Error: /ru/shop/users/13/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 187, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+WARNING level - 2024-01-25 01:40:35,265 django.request: "Not Found: /ru/shop/users/5/orders/"
+WARNING level - 2024-01-25 01:40:37,482 django.request: "Not Found: /ru/shop/users/5/orders/"
+INFO level - 2024-01-25 01:41:03,150 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:41:04,427 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:41:05,594 django.request: "Not Found: /ru/shop/users/5/orders/"
+INFO level - 2024-01-25 01:41:13,498 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:41:14,623 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 01:41:19,011 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 188, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+ERROR level - 2024-01-25 01:41:21,080 django.request: "Internal Server Error: /ru/shop/users/20/orders/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 104, in view
+    return self.dispatch(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\base.py", line 143, in dispatch
+    return handler(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 182, in get
+    response = super().get(request, *args, **kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\views\generic\list.py", line 154, in get
+    self.object_list = self.get_queryset()
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 188, in get_queryset
+    self.owner = User.objects.get(pk=self.kwargs['user_id'])
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\manager.py", line 87, in manager_method
+    return getattr(self.get_queryset(), name)(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\db\models\query.py", line 637, in get
+    raise self.model.DoesNotExist(
+django.contrib.auth.models.User.DoesNotExist: User matching query does not exist.
+INFO level - 2024-01-25 01:43:58,659 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:43:59,782 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 01:44:43,104 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:44:44,190 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:44:45,463 django.request: "Not Found: /ru/shop/users/20/orders/"
+WARNING level - 2024-01-25 01:44:45,566 django.request: "Not Found: /ru/shop/users/20/orders/"
+WARNING level - 2024-01-25 01:44:45,805 django.request: "Not Found: /ru/shop/users/20/orders/"
+INFO level - 2024-01-25 01:45:43,419 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:45:44,565 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:45:45,777 django.request: "Not Found: /ru/shop/users/20/orders/"
+WARNING level - 2024-01-25 01:45:46,766 django.request: "Not Found: /ru/shop/users/20/orders/"
+WARNING level - 2024-01-25 01:46:08,952 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 01:46:22,891 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:46:24,080 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:46:37,481 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 01:46:45,703 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:46:47,001 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:46:47,890 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 01:46:56,710 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 01:47:19,200 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:47:20,515 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:47:21,217 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 01:47:35,014 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 01:47:36,239 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 01:53:32,495 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 01:53:33,627 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 01:54:45,257 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 01:54:46,522 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 01:57:37,668 django.request: "Not Found: /ru/shop/users/11/orders/"
