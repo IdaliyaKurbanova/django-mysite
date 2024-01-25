@@ -1,9 +1,11 @@
 import logging
+from django.core import serializers
 from django.contrib.auth.mixins import PermissionRequiredMixin, LoginRequiredMixin, UserPassesTestMixin
 from django.contrib.auth.models import User
 from django.contrib.syndication.views import Feed
+from django.core.cache import cache
 from django.shortcuts import render, reverse, redirect
-from django.http import HttpRequest, HttpResponseRedirect, JsonResponse, HttpResponseNotFound, Http404
+from django.http import HttpRequest, HttpResponseRedirect, JsonResponse, HttpResponseNotFound, Http404, HttpResponse
 from typing import List, Dict, Any
 from django.urls import reverse_lazy
 from django.views import View
@@ -190,6 +192,20 @@ class UserOrderListView(LoginRequiredMixin, ListView):
         context = super().get_context_data(**kwargs)
         context['owner'] = self.owner
         return context
+
+
+def user_orders_export(request: HttpRequest, user_id: int) -> HttpResponse:
+    key_for_cache = 'user_{}_orders'.format(user_id)
+    data = cache.get(key_for_cache)
+    if data is None:
+        try:
+            owner = User.objects.get(pk=user_id)
+        except Exception:
+            raise Http404
+        orders = Order.objects.filter(user=owner).order_by('pk').prefetch_related("products")
+        data = serializers.serialize('json', orders)
+        cache.set(key_for_cache, data, 120)
+    return HttpResponse(data)
 
 
 

@@ -1867,3 +1867,410 @@ INFO level - 2024-01-25 01:53:33,627 django.utils.autoreload: "Watching for file
 WARNING level - 2024-01-25 01:54:45,257 django.request: "Not Found: /ru/shop/users/11/orders/"
 WARNING level - 2024-01-25 01:54:46,522 django.request: "Not Found: /ru/shop/users/11/orders/"
 WARNING level - 2024-01-25 01:57:37,668 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 17:25:01,294 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 17:25:02,321 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 17:27:30,931 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 17:27:31,684 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 17:55:27,467 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 17:55:28,197 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 17:56:41,241 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\urls.py changed, reloading."
+INFO level - 2024-01-25 17:56:41,973 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 17:56:48,042 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: user_orders_export() got an unexpected keyword argument 'user_id'
+INFO level - 2024-01-25 17:59:49,581 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 17:59:50,377 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 18:00:25,957 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 18:00:26,680 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 18:00:52,349 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 201, in user_orders_export
+    return JsonResponse(owner)
+           ^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\http\response.py", line 724, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO level - 2024-01-25 18:01:21,250 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 18:01:22,333 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 18:02:10,512 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 18:02:11,314 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 18:02:19,998 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 18:02:20,739 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:14:02,929 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:14:03,797 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:14:26,766 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:14:27,335 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:15:44,679 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:15:45,260 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:16:44,808 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:16:45,421 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:18:18,534 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:18:19,131 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:20:14,628 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:20:15,257 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:20:20,467 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 202, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+INFO level - 2024-01-25 21:22:06,562 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:22:07,218 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:22:07,678 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 202, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+ERROR level - 2024-01-25 21:22:09,754 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 202, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+INFO level - 2024-01-25 21:24:16,808 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:24:17,470 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:24:18,075 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 202, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+INFO level - 2024-01-25 21:24:38,579 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:24:39,313 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:24:55,217 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:24:55,956 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:25:55,455 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:25:56,213 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:26:38,028 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:26:38,729 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:28:11,201 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:28:11,916 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:28:12,444 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 446, in get_attribute
+    return get_attribute(instance, self.source_attrs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'user'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 204, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 190, in get_attribute
+    return super().get_attribute(instance)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 479, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `user` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'user'.
+INFO level - 2024-01-25 21:29:21,087 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:29:21,780 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:29:22,357 django.request: "Internal Server Error: /ru/shop/users/8/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 539, in get_attribute
+    relationship = get_attribute(instance, self.source_attrs)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\fields.py", line 96, in get_attribute
+    instance = getattr(instance, attr)
+               ^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'QuerySet' object has no attribute 'products'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 204, in user_orders_export
+    return JsonResponse(serializer.data)
+                        ^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 555, in data
+    ret = super().data
+          ^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 253, in data
+    self._data = self.to_representation(self.instance)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\serializers.py", line 509, in to_representation
+    attribute = field.get_attribute(instance)
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\rest_framework\relations.py", line 560, in get_attribute
+    raise type(exc)(msg)
+AttributeError: Got AttributeError when attempting to get a value for field `products` on serializer `OrderSerializer`.
+The serializer field might be named incorrectly and not match any attribute or key on the `QuerySet` instance.
+Original exception text was: 'QuerySet' object has no attribute 'products'.
+INFO level - 2024-01-25 21:30:20,892 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:30:21,674 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:31:06,547 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:31:07,339 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:32:25,338 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:32:25,966 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:34:22,353 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:34:23,018 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:34:59,183 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:34:59,895 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:35:02,283 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:35:02,875 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:35:29,930 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:35:30,530 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:35:58,662 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:35:59,297 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:36:35,729 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:36:36,328 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:37:01,541 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:37:02,198 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:37:29,491 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:37:30,083 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:38:24,415 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 21:38:25,098 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:43:21,269 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:43:21,834 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:44:47,746 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:44:48,326 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:45:16,621 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:45:17,191 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:49:16,422 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:49:17,040 django.utils.autoreload: "Watching for file changes with StatReloader"
+ERROR level - 2024-01-25 21:49:22,470 django.request: "Internal Server Error: /ru/shop/users/1/orders/export/"
+Traceback (most recent call last):
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\exception.py", line 55, in inner
+    response = get_response(request)
+               ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\core\handlers\base.py", line 197, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\sentry_sdk\integrations\django\views.py", line 84, in sentry_wrapped_callback
+    return callback(request, *args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py", line 205, in user_orders_export
+    return JsonResponse(serialized)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\kurba\PycharmProjects\AnotherDjango\venv\Lib\site-packages\django\http\response.py", line 724, in __init__
+    raise TypeError(
+TypeError: In order to allow non-dict objects to be serialized set the safe parameter to False.
+INFO level - 2024-01-25 21:52:14,839 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:52:15,538 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:52:17,838 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:52:18,422 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:53:31,295 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:53:32,055 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:53:45,913 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:53:46,538 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:54:09,506 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:54:10,137 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:55:07,560 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:55:08,343 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:55:56,696 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:55:57,442 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 21:57:03,898 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 21:57:04,530 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 22:05:39,570 django.request: "Not Found: /ru/shop/users/11/orders/export/"
+INFO level - 2024-01-25 22:08:12,612 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 22:08:13,218 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 22:12:39,707 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 22:12:40,389 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 22:12:54,752 django.request: "Not Found: /ru/shop/users/11/orders/export/"
+WARNING level - 2024-01-25 22:14:08,666 django.request: "Not Found: /ru/shop/users/11/orders/export/"
+INFO level - 2024-01-25 22:15:45,228 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 22:15:45,988 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 22:18:57,580 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 22:18:58,315 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-01-25 22:22:51,814 django.request: "Not Found: /ru/shop/users/11/orders/export/"
+WARNING level - 2024-01-25 22:22:56,722 django.request: "Not Found: /ru/shop/users/11/orders/"
+WARNING level - 2024-01-25 22:22:57,297 django.request: "Not Found: /ru/shop/users/11/orders/"
+INFO level - 2024-01-25 22:23:17,577 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\views.py changed, reloading."
+INFO level - 2024-01-25 22:23:18,270 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-01-25 22:25:51,133 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
+INFO level - 2024-01-25 22:25:51,736 django.utils.autoreload: "Watching for file changes with StatReloader"
