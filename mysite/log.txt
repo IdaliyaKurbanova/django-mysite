@@ -2274,3 +2274,8 @@ INFO level - 2024-01-25 22:23:17,577 django.utils.autoreload: "C:\Users\kurba\Py
 INFO level - 2024-01-25 22:23:18,270 django.utils.autoreload: "Watching for file changes with StatReloader"
 INFO level - 2024-01-25 22:25:51,133 django.utils.autoreload: "C:\Users\kurba\PycharmProjects\AnotherDjango\python_django\mysite\shopapp\serializers.py changed, reloading."
 INFO level - 2024-01-25 22:25:51,736 django.utils.autoreload: "Watching for file changes with StatReloader"
+INFO level - 2024-04-05 14:34:23,942 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-04-05 14:34:29,100 django.request: "Not Found: /"
+INFO level - 2024-04-05 14:40:03,120 django.utils.autoreload: "Watching for file changes with StatReloader"
+WARNING level - 2024-04-05 14:40:04,744 django.request: "Not Found: /"
+INFO level - 2024-04-05 14:40:13,054 shopapp.views: "Logging for info-level is set"

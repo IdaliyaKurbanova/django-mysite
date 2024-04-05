@@ -1,0 +1,21 @@
+[tool.poetry]
+name = "python-django"
+version = "0.1.0"
+description = ""
+authors = ["Идалия Курбанова <bulgak.417@mail.ru>"]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.4"
+djangorestframework = "^3.15.1"
+django-debug-toolbar = "^4.3.0"
+django-filter = "^24.2"
+drf-spectacular = "^0.27.2"
+pillow = "^10.3.0"
+gunicorn = "^21.2.0"
+sentry-sdk = "^1.44.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
