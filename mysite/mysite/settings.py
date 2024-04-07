@@ -74,6 +74,7 @@ INSTALLED_APPS = [
     'myauth.apps.MyauthConfig',
     'blogapp.apps.BlogappConfig',
 
+    'django_dump_load_utf8',
     'rest_framework',
     'django_filters',
     'drf_spectacular',
